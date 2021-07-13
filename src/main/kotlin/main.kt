@@ -4,6 +4,9 @@ fun main() {
 
     removeVowels("i am making progress")
     println(removeVowels("i am making progress"))
+
+    loveFunc(24,12)
+    println(loveFunc(24,12))
 }
 
 
@@ -33,3 +36,10 @@ fun removeVowels (word: String): String {
     }
     return newWord.toString()
 }
+
+fun loveFunc (flower1: Int, flower2: Int): Boolean {
+    return flower1 %2 != flower2 % 2;
+}
+
+
+
