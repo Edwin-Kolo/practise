@@ -7,6 +7,9 @@ fun main() {
 
     loveFunc(24,12)
     println(loveFunc(24,12))
+
+    reverseNumber()
+
 }
 
 
@@ -39,6 +42,17 @@ fun removeVowels (word: String): String {
 
 fun loveFunc (flower1: Int, flower2: Int): Boolean {
     return flower1 %2 != flower2 % 2;
+}
+
+fun reverseNumber () {
+    var numb = 54321
+    var reverse = 0
+    while (numb != 0) {
+        reverse = reverse * 10 + numb % 10
+        numb /= 10
+
+    }
+    println("Reversed Number: $reverse")
 }
 
 
